@@ -29,6 +29,8 @@ def find_valid_calls(planeteer_calls)
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above 
   # Return the first valid call found, or return nil if no valid calls are found
   planeteer_calls.find do |element|
-   element = valid_calls
+    valid_calls.each do |int_ele|
+   element = valid_calls[int_ele]
+ end 
   end 
 end
